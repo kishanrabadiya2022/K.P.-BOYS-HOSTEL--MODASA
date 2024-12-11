@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Home Link */
+.home-link {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #d4e4f3;
+}
+
+/* Page Title */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Section Containers */
+.rules-regulations, .download-pdf {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Titles */
+h2 {
+    font-size: 1.8em;
+    color: #0056b3;
+    margin-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+    animation: slideInLeft 0.6s ease-in;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* List Styles */
+.rules-regulations ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.rules-regulations li {
+    position: relative;
+    padding-left: 25px;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.rules-regulations li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Download PDF Button */
+.download-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0056b3;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #004494;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 20px;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Animation */
+footer p {
+    animation: fadeInUp 1s ease-in;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
